@@ -6,7 +6,7 @@
   <body style="text-align:center;background:#000;color:#0f0;">
     <pre id="p"></pre>
     <script>
-var WH=80,M=Math,s=M.sin,sq=M.sqrt,rnd=M.random,c=function(x,y){var t=+new Date/50,d=function(a,b){return sq((a-99)*(a-99)+(b-66)*(b-66))},v=s(d(x+t,y)/7)+s(d(x,y)/7)+s(d(x,t/4)/7)+s(d(x,y+t)/7),p=(0|(7+v))*23;return[p,p,p]},B=function(b){b=b[0];return b<75?" ":b<100?".":b<175?"o":b<200?"O":"@"},P=function(){p.innerHTML="";for(x=WH/4;x--;){for(l="",y=WH;y--;){l+=B(c(x,y))}p.innerHTML+=l+"<br>"}};window.onload=Function("","setInterval(P,42)")
+var WH=80,M=Math,s=M.sin,sq=M.sqrt,rnd=M.random,c=function(x,y){var t=+new Date/50,d=function(a,b){return sq((a-99)*(a-99)+(b-66)*(b-66))},v=s(d(x+t,y)/7)+s(d(x,y)/7)+s(d(x,t/4)/7)+s(d(x,y+t)/7),p=(0|(7+v))*23;return[p,p,p]},_=document.title,B=function(b){b=b[0];return b<75?" ":b<100?".":b<175?"o":b<200?"O":"@"},P=function(){p.innerHTML="";for(y=WH/4;y--;){for(q=0,l="",x=WH;x--;){l+=y==10&&x>32&&x<47?_[q++]:B(c(y,x))}p.innerHTML+=l+"<br>"}};window.onload=Function("","setInterval(P,42)")
     </script>
   </body>
 </html>
