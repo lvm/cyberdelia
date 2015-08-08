@@ -1,12 +1,12 @@
-var W = 80 // width / height(W/4)
+var W = 80 // width
   , M = Math // Math and friends.
   , s = M.sin
-  , sq = M.sqrt
+  , q = M.sqrt
   , e = M.pow
   , c = function(x, y) {
       var t = +new Date / W
         , d = function(a, b) {  // http://www.purplemath.com/modules/distform.htm
-            return sq(e(a - 99, 2) + e(b - 66, 2))
+            return q(e(a - 99, 2) + e(b - 66, 2))
         }
         , v = s(d(x + t, y) / 7) + s(d(x, y) / 7) + s(d(x, t / 4) / 7) + s(d(x, y + t) / 7);
       return (0 | (7 + v)) * 23
@@ -18,7 +18,7 @@ var W = 80 // width / height(W/4)
   , P = function() { // teh plasma
       p.innerHTML = ""; // canvas.clearRect from the past.
       // 20 lines
-      for (y = W / 4; y--;) {
+      for (y = 20; y--;) { // height
         // 80 cols
         for (q = 0, l = "", x = W; x--;) {
           // on each cycle, we'll reset q and l.
