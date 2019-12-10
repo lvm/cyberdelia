@@ -25,7 +25,7 @@ var W = 80 // width
           // also, we'll ask which position we're in
           // so we can insert document.title into the plasma.
           // else put a char based on its 'color'.
-          l += y == 10 && x > 32 && x < 47 ? _[q++] : B(c(y, x))
+          l += y == 10 && x > 31 && x < 50 ? _[q++] : B(c(y, x))
         }
         p.innerHTML += l + "<br>"
       }
