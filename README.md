@@ -2,4 +2,4 @@
 
     TFY;QA
 
-    http://cyberdelia.xyz/
+    https://www.cyberdelia.party/
